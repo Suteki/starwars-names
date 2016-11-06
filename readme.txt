@@ -242,3 +242,21 @@ npm install -D istanbul
 "test:single": "istanbul cover -x */*.test.js _mocha -- -R spec src/index.test.js",
 
 npm run test:single
+
+#18 Adding code coverage checking
+npm run test:single
+
+  "scripts": {
+    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single && npm run check-coverage"
+    }
+
+npm run check-coverage
+
+(for travis)
+script:
+  - npm run test:single
+  - npm run check-coverage
