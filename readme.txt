@@ -132,3 +132,21 @@ npm t
 expect(starWars.all).to.satisfy(isArrayOfStrings);
 expect(starWars.all).to.not.satisfy(isArrayOfStrings);
 expect(starWars.all).to.include('Luke Skywalker');
+
+#12 Automating Release with semantic-release
+
+WARNING FIRSTLY Register https://travis-ci.org/
+or https://circleci.com/ (instead of Travis CI)
+
+npm install -g semantic-release-cli
+semantic-release-cli setup
+N
+Travis CI (or snap, or code cheap)
+single node version
+
+change version to (add)
+  "version": "0.0.0-semantically-released",
+
+travis add:
+    script:
+        - npm run test
