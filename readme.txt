@@ -118,3 +118,10 @@ npm install starwars-names
 npm install starwars-names@beta
 npm install starwars-names@1.4.0-beta.0
 npm info
+
+#10 Setting up Unit Testing with Mocha and Chai
+npm install mocha chai --save-dev
+npm i -D mocha chai
+
+create 1 test only just to cheak that test libraries work as we expect
+"test": "mocha src/index.test.js -w" - add tests runner with watcher
