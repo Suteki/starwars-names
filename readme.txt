@@ -219,3 +219,19 @@ Add test:single for travis
 We don't want travis to watch the tests
 
 git push
+
+#16 Automatically running tests before commits with ghooks
+npm i -D ghooks
+
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
+  }
+
+chore
+ghooks
+Add ghooks
+Protect ourselves from commiting code that breaks the tests
+
+git push
