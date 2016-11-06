@@ -37,3 +37,12 @@ node
     var lib = require('./src/index.js')
     lib.all
     lib.random()
+
+#5
+git status
+.gitignore
+git add -A
+git status
+git commit -m 'Adding a library'
+git status
+git push
