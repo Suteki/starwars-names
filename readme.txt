@@ -280,3 +280,8 @@ chore
 test
 Add reporting to codecov
 Install codecov.io, add report-coverage script, and add script to the travis.yml
+
+(chrome extension coverage)
+
+#20 Adding badges to you README
+http://shields.io
