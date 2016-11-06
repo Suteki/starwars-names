@@ -83,4 +83,20 @@ Super Awesome Initial Release
 This is the first one! (ctrl+cmd+space to insert emoji)
 publish
 
+#8 Releasing a new version to npm
+version:
+    major - major release - breaking changes of some kind (breaking change - API)
+    minor - minor release - new features, but not breaking API changes
+    patch release - bugfix
+
+git status
+git diff
+git add -A
+git status
+git commit -m 'Updating starwars-names. Adding Shmi Sky walker'
+git tag 1.1.0
+git push
+git push --tags
+npm publish
+npm info starwars-names
 
