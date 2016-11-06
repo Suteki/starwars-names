@@ -1,8 +1,7 @@
 # starwars-names
 
-
-[![travis build](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/suteki/starwars-names)
-[![codecov coverage](https://img.shields.io/codecov/c/github/codecov/example-python.svg)](https://codecov.io/github/Suteki/starwars-names)
+[![travis build](https://travis-ci.org/Suteki/starwars-names.svg)](https://travis-ci.org/suteki/starwars-names)
+[![codecov coverage](https://img.shields.io/codecov/c/github/Suteki/starwars-names.svg)](https://codecov.io/github/Suteki/starwars-names)
 
 ???
 
