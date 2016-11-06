@@ -29,3 +29,11 @@ test command:
 git-repository:
 keywords: random star wars
 licence:
+
+#4
+npm install --save unique-random-array
+(npm i -S)
+node
+    var lib = require('./src/index.js')
+    lib.all
+    lib.random()
