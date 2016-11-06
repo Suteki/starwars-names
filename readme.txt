@@ -285,3 +285,37 @@ Install codecov.io, add report-coverage script, and add script to the travis.yml
 
 #20 Adding badges to you README
 http://shields.io
+
+#21 Adding ES6 Support
+npm i -D babel-cli
+
+    "prebuild": "rm -rf dist",
+    "build": "babel --out-dir dist --ignore *.test.js src",
+
+npm i -D rimraf
+
+    "prebuild": "rimraf dist",
+
+npm i -D babel-preset-es2015 babel-preset-stage-2
+
+  "babel": {
+    "presets": ["es2015", "stage-2"]
+  }
+
+  "main": "dist/index.js",
+
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+
+(travis)
+script:
+  - npm run build
+
+npm pack
+open starwars-names-0.0.0-semantically-released.tgz
+
+  "files": [
+    "dist",
+    "README.md"
+  ],
+
+
