@@ -359,3 +359,18 @@ git push
 
 git checkout -b lesson/23-limit-travis-builds
 git push -u origin lesson/23-limit-travis-builds
+
+#24 Add a browser build to an npm module
+npm i -D webpack
+npm i -D babel-loader json-loader
+
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+
+npm run build:umd
+npm run build:umd.min
+
+npm i -D npm-run-all
+
+npm run build
