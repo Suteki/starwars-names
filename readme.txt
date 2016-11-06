@@ -260,3 +260,23 @@ npm run check-coverage
 script:
   - npm run test:single
   - npm run check-coverage
+
+#19 Add code coverage reporting
+http://codecov.io (register)
+npm install -D codecov.io
+
+  "scripts": {
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+
+(travis)
+after_success:
+  - npm run report-coverage
+
+git status
+git add .
+npm run commit
+
+chore
+test
+Add reporting to codecov
+Install codecov.io, add report-coverage script, and add script to the travis.yml
