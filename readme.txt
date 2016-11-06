@@ -235,3 +235,10 @@ Add ghooks
 Protect ourselves from commiting code that breaks the tests
 
 git push
+
+#17 Adding code coverage recording with Istanbul
+npm install -D istanbul
+
+"test:single": "istanbul cover -x */*.test.js _mocha -- -R spec src/index.test.js",
+
+npm run test:single
