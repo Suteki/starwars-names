@@ -201,3 +201,21 @@ If you pass a number to the random function, you will receive an array with that
 closes #2
 
 we could make (closes #2 BREAKING CHANGE) to notify that commit has new change
+
+#15 Automatically Releasing with TravisCI
+
+"test:single": "mocha src/index.test.js",
+
+script:
+  - npm run test:single
+
+git status
+git add .
+
+npm run commit
+chore
+build
+Add test:single for travis
+We don't want travis to watch the tests
+
+git push
