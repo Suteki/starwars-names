@@ -150,3 +150,37 @@ change version to (add)
 travis add:
     script:
         - npm run test
+
+#13 Writing conventional commits with commitizen
+http://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit
+
+npm install -D commitizen cz-conventional-changelog
+
+  "scripts": {
+    "commit": "git-cz",
+
+instead of (will be deprecated in v3):
+
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+
+write:
+
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+
+git status
+git add package.json
+git status
+npm run commit
+
+chore
+releasing
+Add travis config, conventional commit, and semantic-release
+
+closes #1 (create issue before closing - Simplify releases - With semantic-release and commitizen)
+git log
