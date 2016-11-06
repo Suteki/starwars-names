@@ -125,3 +125,10 @@ npm i -D mocha chai
 
 create 1 test only just to cheak that test libraries work as we expect
 "test": "mocha src/index.test.js -w" - add tests runner with watcher
+
+#11 Unit Testing with Mocha and Chai
+npm t
+(short for run tests)
+expect(starWars.all).to.satisfy(isArrayOfStrings);
+expect(starWars.all).to.not.satisfy(isArrayOfStrings);
+expect(starWars.all).to.include('Luke Skywalker');
