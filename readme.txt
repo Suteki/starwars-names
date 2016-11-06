@@ -46,3 +46,25 @@ git status
 git commit -m 'Adding a library'
 git status
 git push
+
+#6
+npm publish
+npm info starwars-names
+cd Desktop/
+npm install starwars-names
+
+vim index.js
+var starWarsNames = require('starwars-names');
+console.log(starWarsNames.all);
+console.log(starWarsNames.random());
+console.log(starWarsNames.random());
+console.log(starWarsNames.random());
+console.log(starWarsNames.random());
+console.log(starWarsNames.random());
+
+node index.js
+node index.js
+
+http://npm.im/starwars-names
+
+
