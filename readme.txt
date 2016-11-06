@@ -336,3 +336,26 @@ npm run test
 npm run watch:test
 npm run cover
 npm run watch:test
+
+#23 Limit Built Branches on Travis
+
+branches:
+  only:
+    - master
+  exclude:
+    - master
+
+git status
+git add .
+git status
+npm run commit
+
+chore
+travis
+Only build master and RPs
+Because we don't want to waste resources. Save the trees (tree emoji)
+
+git push
+
+git checkout -b lesson/23-limit-travis-builds
+git push -u origin lesson/23-limit-travis-builds
