@@ -100,3 +100,20 @@ git push --tags
 npm publish
 npm info starwars-names
 
+#9 Publishing a beta version
+"version": "1.4.0-beta.0",
+
+git diff
+git add -A
+git commit -am 'Adding Kent C. Dodds'
+git tag 1.4.0-beta.0
+git push
+git push --tags
+npm publish --tags beta
+npm info
+
+cd Desktop/
+npm install starwars-names
+npm install starwars-names@beta
+npm install starwars-names@1.4.0-beta.0
+npm info
