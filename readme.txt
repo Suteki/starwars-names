@@ -318,4 +318,21 @@ open starwars-names-0.0.0-semantically-released.tgz
     "README.md"
   ],
 
+#22 Adding ES6 Support to Tests using Mocha and Babel
+npm i -D nyc
 
+  "scripts": {
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "test": "mocha src/index.test.js -w --compliers js:babel-register",
+    "test:single": "nyc cover -x */*.test.js _mocha -- -R spec src/index.test.js",
+
+npm i -D babel-register
+
+npm run test
+
+    "test:single": "nyc cover -x */*.test.js _mocha -- -R spec src/index.test.js",
+    "test": "mocha src/index.test.js -w --compilers js:babel-register",
+
+npm run watch:test
+npm run cover
+npm run watch:test
