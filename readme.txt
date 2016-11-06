@@ -184,3 +184,20 @@ Add travis config, conventional commit, and semantic-release
 
 closes #1 (create issue before closing - Simplify releases - With semantic-release and commitizen)
 git log
+
+#14 Commiting a new feature with commitizen
+create issue
+    Get specified number of starwars names
+    Would be super to get an array back if I call: starWarsNames.random(3)
+
+git status
+git add .
+npm run commit
+
+feat
+random
+Add ability to get an array of starwars names
+If you pass a number to the random function, you will receive an array with that number of random items
+closes #2
+
+we could make (closes #2 BREAKING CHANGE) to notify that commit has new change
