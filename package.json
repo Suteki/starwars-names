@@ -1,5 +1,5 @@
 {
-  "name": "egghead",
+  "name": "starwars-names",
   "version": "1.0.0",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
