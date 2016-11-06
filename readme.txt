@@ -1,6 +1,11 @@
 https://github.com/kentcdodds/starwars-names
 
-#3
+How to Write an Open Source JavaScript Library
+
+#1 Introduction to How to Write an Open Source JavaScript Library
+#2 Setting up GitHub
+
+#3 Configuring npm and creating a package.json
 http://nodejs.org
 npm --version
 http://docs.npmjs.com -> config
@@ -30,7 +35,7 @@ git-repository:
 keywords: random star wars
 licence:
 
-#4
+#4 Creating the library and adding dependencies
 npm install --save unique-random-array
 (npm i -S)
 node
@@ -38,7 +43,7 @@ node
     lib.all
     lib.random()
 
-#5
+#5 Publishing to GitHub
 git status
 .gitignore
 git add -A
@@ -47,7 +52,7 @@ git commit -m 'Adding a library'
 git status
 git push
 
-#6
+#6 Publishing to npm
 npm publish
 npm info starwars-names
 cd Desktop/
@@ -66,5 +71,16 @@ node index.js
 node index.js
 
 http://npm.im/starwars-names
+
+#7 Releasing a version to GitHub
+git tag 1.0.0
+git push --tags
+
+https://github.com/Suteki/starwars-names/tree/1.0.0
+Draft a new release (https://github.com/Suteki/starwars-names/releases/new)
+add tag 1.0.0
+Super Awesome Initial Release
+This is the first one! (ctrl+cmd+space to insert emoji)
+publish
 
 
