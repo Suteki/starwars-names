@@ -109,6 +109,7 @@ git commit -am 'Adding Kent C. Dodds'
 git tag 1.4.0-beta.0
 git push
 git push --tags
+
 npm publish --tags beta
 npm info
 
